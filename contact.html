@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts | IN BLOOM</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css?v=38">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="index.html" class="brand-wrap">
+      <img src="images/SmallLogo.svg" alt="In Bloom Logo" class="header-logo">
+      <span class="brand-title">IN BLOOM</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html" class="active">CONTACTS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="contact-page-main">
+
+    <section class="feedback-section">
+      <h2 class="mockup-heading">
+        <img src="images/BloomVector.svg" alt="" class="flower-icon">Any Feedbacks?
+      </h2>
+      <p class="feedback-subtext">Your feedback greatly helps us improve.</p>
+
+      <input type="checkbox" id="submitted-toggle" style="display: none;">
+
+      <!-- FEEDBACK -->
+      <form class="feedback-form-container">
+        <div class="feedback-box">
+          <textarea placeholder="Write your feedback here..." required></textarea>
+        </div>
+        
+        <div class="submit-btn-wrap">
+          <label for="submitted-toggle" class="gmail-submit-btn">SUBMIT</label>
+        </div>
+      </form>
+
+      <div class="success-alert">
+        Thank you! Your feedback can help us bloom and bring a better style! 
+      </div>
+    </section>
+
+    <!-- CONTACTS & SOCIALS -->
+    <section class="contacts-band">
+      <div class="contacts-inner">
+        <div class="contacts-group">
+          <h2 class="mockup-heading">
+            <img src="images/BloomVector.svg" alt="" class="flower-icon"> CONTACTS
+          </h2>
+          <p class="contact-text">
+            <a href="mailto:sundaybloomysunday@gmail.com">sundaybloomysunday@gmail.com</a>
+          </p>
+          <p class="contact-text">
+            <a href="tel:09189857987">09189857987</a>
+          </p>
+        </div>
+
+        <div class="contacts-group">
+          <h2 class="mockup-heading">
+            <img src="images/BloomVector.svg" alt="" class="flower-icon"> FIND OUR SOCIALS
+          </h2>
+          <div class="socials-row">
+            <!-- FACEBOOK -->
+            <a href="https://www.facebook.com/InBloomFashionPH?rdid=nSGobmaoI7BMU0vH&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1ED8K3Ucmg%2F" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon">
+              <img src="images/FbLogo.svg" alt="Facebook" width="50" height="50">
+            </a>
+            <!-- INSTAGRAM -->
+            <a href="https://www.instagram.com/inbloomfashionph/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
+              <img src="images/InstaLogo.svg" alt="Instagram" width="50" height="50">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="images/BigLogo.svg" alt="In Bloom Footer Logo" class="footer-logo">
+  </footer>
+
+  <!-- SUBMISSION -->
+  <script>
+    function sendToGmail() {
+      const message = document.getElementById('feedbackInput').value.trim();
+      const email = 'sundaybloomysunday@gmail.com';
+      const subject = encodeURIComponent('IN BLOOM - Customer Feedback / Inquiry');
+      const body = encodeURIComponent(message);
+      window.open(`https://mail.google.com/mail/?view=cm&to=${email}&su=${subject}&body=${body}`, '_blank');
+    }
+  </script>
+
+</body>
+</html>
