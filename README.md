@@ -1,2 +1,2 @@
 # Inbloom-project
-for school pruposes
+for school purposes 
